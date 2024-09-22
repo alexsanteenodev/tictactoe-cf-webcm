@@ -259,8 +259,7 @@ export default async function (manager: Manager, _settings: ComponentSettings) {
   });
 
   manager.registerWidget(async () => {
-    const location = "Colombia";
-    const widget = await manager.useCache("titactoe-" + location, async () => {
+    const widget = await manager.useCache("tictactoe-" + location, async () => {
       try {
         return widgetHTML(manager);
       } catch (error) {
