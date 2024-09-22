@@ -259,7 +259,7 @@ export default async function (manager: Manager, _settings: ComponentSettings) {
   });
 
   manager.registerWidget(async () => {
-    const widget = await manager.useCache("tictactoe-" + location, async () => {
+    const widget = await manager.useCache("tictactoe", async () => {
       try {
         return widgetHTML(manager);
       } catch (error) {
